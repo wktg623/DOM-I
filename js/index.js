@@ -53,9 +53,12 @@ navigation.append(newElement);
 let El= document.getElementsByTagName('nav');
 const aTag = document.createTextNode("Home");
 El[0].prepend(aTag);
+El[0].style.color = "green"
 
 
 let aTags = document.querySelectorAll('a');
+
+
 aTags[0].textContent = siteContent["nav"]["nav-item-1"];
 aTags[1].textContent = siteContent["nav"]["nav-item-2"];
 aTags[2].textContent = siteContent["nav"]["nav-item-3"];
@@ -63,14 +66,12 @@ aTags[3].textContent = siteContent["nav"]["nav-item-4"];
 aTags[4].textContent = siteContent["nav"]["nav-item-5"];
 aTags[5].textContent = siteContent["nav"]["nav-item-6"];
 
-
-
-
-
-aTags.forEach((a) =>{
+aTags.forEach((element)=>{
   
-  a.style.color = "green";
-});
+  element.style.color = "green";
+}
+)
+
 
 
 
